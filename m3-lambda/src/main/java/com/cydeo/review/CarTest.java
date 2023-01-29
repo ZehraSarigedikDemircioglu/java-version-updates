@@ -65,6 +65,8 @@ public class CarTest {
 
         List<Car> filteredCars = new ArrayList<>();
 
+//        filteredCars.forEach(car -> System.out.println(car));
+
         for (Car car : cars) {
             if (carPredicate.test(car)) {
                 filteredCars.add(car);
