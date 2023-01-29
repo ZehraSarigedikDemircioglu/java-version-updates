@@ -2,7 +2,7 @@ package com.cydeo;
 
 import java.util.function.*;
 
-public class FunctionalInterface {
+public class FunctionalInterfaceTest {
     public static void main(String[] args) {
 
         ApplePredicate ap = new ApplePredicate() {

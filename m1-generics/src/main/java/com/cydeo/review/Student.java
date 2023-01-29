@@ -1,37 +1,23 @@
 package com.cydeo.review;
 
+import lombok.*;
+
+@AllArgsConstructor
+//@NoArgsConstructor
+//@RequiredArgsConstructor        // We use to assign final fields.
+//@Getter
+//@Setter
+//@ToString
+@Data
 public class Student extends Person {
 
     private String name;
-    private int id;
+    private final int id;
 
-    public Student(String name, int id) {
-        this.name = name;
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                '}';
-    }
+//    public Student(int age, String name, int id) {
+//        super(age);
+//        this.name = name;
+//        this.id = id;
+//    }
 
 }
