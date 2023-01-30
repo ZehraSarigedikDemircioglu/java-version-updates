@@ -8,8 +8,10 @@ public class CountTest {
     public static void main(String[] args) {
 
         List<Integer> ci = Arrays.asList(1, 2, 3, 4);
-        int count = countIf(ci, new OddPredicate());
-        System.out.println("Number of odd integers = " + count);
+        int countOdd = countIf(ci, new OddPredicate());
+        int countPrime = countIf(ci, new PrimePredicate());
+        System.out.println("Number of odd integers = " + countOdd);
+        System.out.println("Number of prime integers = " + countPrime);
 
     }
 
