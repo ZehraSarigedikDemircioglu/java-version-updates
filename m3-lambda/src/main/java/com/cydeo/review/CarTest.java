@@ -27,10 +27,6 @@ public class CarTest {
         System.out.println("Fast Cars:");
         System.out.println(filter(carList, car -> car.getTopSpeed() > 160));
 
-
-
-
-
     }
 
 //    private static List<Car> filterFastCars(List<Car> cars) {
